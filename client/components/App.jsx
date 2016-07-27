@@ -78,7 +78,7 @@ class App extends React.Component {
       // Listen for incoming video data from source
       conn.on('data', (data) => {
         if (typeof data === 'string') {
-          console.log(data);
+          console.log('peerConnection', data);
         } else {
           // Append each received ArrayBuffer to the local MediaSource
           const video = document.querySelector('.video');          
